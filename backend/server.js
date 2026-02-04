@@ -29,8 +29,7 @@ app.use(cors({
   credentials: true
 }));
 
-// Explicit preflight support (IMPORTANT)
-app.options("*", cors());
+
 
 // ------------------------
 // STATIC FILES
