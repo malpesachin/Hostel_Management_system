@@ -2,7 +2,8 @@
 
 // Attach to window to ensure global availability
 window.AuthService = {
-  API_BASE_URL: "http://localhost:3000/api",
+  API_BASE_URL: "https://hostel-management-system-r1y3.onrender.com/api",
+
 
   async login(username, password) {
     try {
