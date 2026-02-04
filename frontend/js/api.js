@@ -5,7 +5,8 @@
 // ============================================================
 
 const api = {
-  BASE_URL: "http://localhost:3000/api",
+ BASE_URL: "https://hostel-management-system-r1y3.onrender.com/api",
+
 
   // -----------------------------
   // GET
