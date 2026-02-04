@@ -30,11 +30,20 @@ const roomRequestRoutes = require("./routes/roomRequest.routes");
 
 const app = express();
 app.use(express.json());
-app.use(cors({
-  origin: "*",
+const corsOptions = {
+  origin: [
+    "http://localhost:5500",
+    "http://127.0.0.1:5500",
+    "https://hostel-management-system.onrender.com",
+    "https://hostel-management-system-r1y3.onrender.com"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"]
-}));
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+
 
 
 // serve uploaded profile photos
