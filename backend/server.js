@@ -42,8 +42,7 @@ app.use(cors({
   credentials: false
 }));
 
-// IMPORTANT: explicitly handle preflight
-app.options("*", cors());
+
 
 
 
